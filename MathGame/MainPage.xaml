@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MathGame.MainPage">
+
+    <ScrollView>
+        
+        <VerticalStackLayout Padding="30.0" Spacing="25">
+            <Label Text="Desafio Matemático"
+                   FontSize="32"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"/>
+
+            <Image Source="mathlogo.png"
+                   Aspect="Center"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Label Text="Resolva o Desafio matemático"
+                   FontSize="18"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"/>
+
+            <HorizontalStackLayout>
+                <Label x:Name="lb1" FontSize="30" Text="5"/>
+                <Label x:Name="lb2" FontSize="30" Text="x"/>
+                <Label x:Name="lb3" FontSize="30" Text="5"/>
+            </HorizontalStackLayout>
+
+            <Entry x:Name="txR" Placeholder="DIgite a resposta aqui" Keyboard="Numeric"/>
+
+            <Button x:Name="btOK" Text="Empty" Clicked="btOK_Clicked"/>
+
+            <Image x:Name="imR" 
+                   Source="question.png" 
+                   Aspect="Center" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center"/>
+           
+            <Label x:Name="lbAcertou" Text="Acertos: 0" FontSize="30"/>
+            <Label x:Name="lbErrou" Text="Erros: 0" FontSize="30"/>
+            
+
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+
+</ContentPage>
